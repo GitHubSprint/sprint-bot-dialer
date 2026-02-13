@@ -1,0 +1,51 @@
+HELP.md
+/models/**
+/target
+/audit/*.txt
+/audit/archived/**
+/db/reports.mv.db
+/db/reports.trace.db.old
+/db/dialer.mv.db
+/db/mail.mv.db
+/db/mail.lock.db
+**.trace.db
+**.trace.db.old
+
+*.bak
+
+
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+*.log
+*.zip
+
+*.gz
+/.idea/
