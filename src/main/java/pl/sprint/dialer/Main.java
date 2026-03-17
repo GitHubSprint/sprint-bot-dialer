@@ -8,8 +8,12 @@ public class Main implements DialerInterface {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
         Main m = new Main();
-
         m.sendCallStatus("123456789", 1L, "", "1", "test", 1, "sprint");
+    }
+
+    public Main() {
+         Config.configure("plugin.properties");
+
     }
 
     @Override
