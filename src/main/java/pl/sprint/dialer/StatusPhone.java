@@ -21,4 +21,13 @@ public enum StatusPhone {
     public int getValue() {
         return value;
     }
+
+    public static StatusPhone fromInt(int value) {
+        for (StatusPhone s : StatusPhone.values()) {
+            if (s.value == value) {
+                return s;
+            }
+        }
+        return UNKNOWN; // Lub wyrzuć wyjątek, jeśli wolisz
+    }
 }
